@@ -1,9 +1,19 @@
 span {
     color: green;
 }
+
 .importance {
     font-style: inherit;
 }
+
 #relation {
    color: blue; 
+}
+
+h1 {
+    color: rgb(237, 10, 48);
+}
+
+figcaption {
+    color: rgb(5, 95, 19);
 }
