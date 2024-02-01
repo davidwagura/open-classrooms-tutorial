@@ -1,3 +1,9 @@
 span {
     color: green;
 }
+.importance {
+    font-style: inherit;
+}
+#relation {
+   color: blue; 
+}
