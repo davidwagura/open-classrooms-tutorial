@@ -34,3 +34,13 @@ body {
 h2 {
     font-size: 1.5rem;
 }
+a:visited {
+    color:blue;
+}
+a:hover {
+    background-color: aliceblue;
+    text-transform: uppercase;
+}
+a:active {
+    background-color: aqua;
+}
