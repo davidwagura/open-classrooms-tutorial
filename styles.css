@@ -8,7 +8,8 @@ span {
 }
 
 #relation {
-   color: blue; 
+   color: blue;
+    letter-spacing: 2px;
 }
 
 h1 {
@@ -20,9 +21,16 @@ h1 {
 figcaption {
     color: #9a088e;
     font-family: sans-serif;
+    word-spacing: 7px;
 }
 
 body {
     background-color: lemonchiffon;
     border: hsl(149,88%,48%);
+}
+#organisms {
+    font-size: 1.4rem;
+}
+h2 {
+    font-size: 1.5rem;
 }
