@@ -1,5 +1,6 @@
 span {
     color: green;
+    font-family: monospace;
 }
 
 .importance {
@@ -18,6 +19,7 @@ h1 {
 
 figcaption {
     color: #9a088e;
+    font-family: sans-serif;
 }
 
 body {
