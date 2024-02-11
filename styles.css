@@ -11,9 +11,16 @@ span {
 }
 
 h1 {
-    color: rgb(237, 10, 48);
+    color: rgb(20, 7, 136);
+    text-align: center;
+    text-decoration: underline;
 }
 
 figcaption {
-    color: rgb(5, 95, 19);
+    color: #9a088e;
+}
+
+body {
+    background-color: lemonchiffon;
+    border: hsl(149,88%,48%);
 }
