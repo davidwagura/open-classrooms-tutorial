@@ -1,23 +1,20 @@
-let cakes = 10;
-let milk = 12;
-let sugar = 5;
+const hoursPerDay = 24;
+const minutesPerHour = 60;
+const secondsPerMinute = 60;
 
-let totalPrice = cakes + milk;
-let balance = milk - cakes;
-let twoCakes = cakes * 2 ;
+const dayInput = document.querySelector('#day-input');
+const calculateButton = document.querySelector('#calculate-button');
+const hours = document.querySelector('#hours');
+const minutes = document.querySelector('#minutes');
+const seconds = document.querySelector('#seconds');
 
-//adding 1 
-cakes++;
-//subtracting 1
-cakes--;
-//division
-cakes / sugar
-
-let numberOfCats = 2;
-
-numberOfCats *= 6; // numberOfCats is now 2*6 = 12;
-
-numberOfCats /= 3; // numberOfCats is now 12/3 = 4;
-
-
-console.log('totalPrice');
+calculateButton.addEventListener('click', () => {
+  let days = dayInput.value;
+  let calcHours = days * hoursPerDay;
+  let calcMinutes = calcHours * minutesPerHour;
+  let calcSeconds = calcMinutes * secondsPerMinute;
+  
+  hours.innerText = `${calcHours} hours`;
+  minutes.innerText = `${calcMinutes} minutes`;
+  seconds.innerText = `${calcSeconds} seconds`;
+});
