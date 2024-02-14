@@ -20,3 +20,9 @@ let userSignedOut = false;
 
 console.log(typeof userSignedIn);
 console.log(typeof userSignedOut);
+
+//string
+let firstName = ' John';
+let lastName = 'Maina';
+
+console.log(firstName + ' ' + lastName);
