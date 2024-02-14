@@ -8,3 +8,7 @@ let largeDecimal = 42.2224;
 console.log(typeof positiveInteger);
 console.log(typeof negatveIntegerInteger);
 console.log(typeof largeInteger);
+
+//floating-point arithmetic
+let integerCalculation = 1 + 2; // gives 3
+let wierdCalculation = 0.1 + 0.2; // 0.3 expected, actual answer 0.3000000
