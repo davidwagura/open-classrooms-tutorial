@@ -1,20 +1,10 @@
-const hoursPerDay = 24;
-const minutesPerHour = 60;
-const secondsPerMinute = 60;
+//type number
 
-const dayInput = document.querySelector('#day-input');
-const calculateButton = document.querySelector('#calculate-button');
-const hours = document.querySelector('#hours');
-const minutes = document.querySelector('#minutes');
-const seconds = document.querySelector('#seconds');
+let positiveInteger = 23;
+let negatveInteger = -24;
+let largeDecimal = 42.2224;
 
-calculateButton.addEventListener('click', () => {
-  let days = dayInput.value;
-  let calcHours = days * hoursPerDay;
-  let calcMinutes = calcHours * minutesPerHour;
-  let calcSeconds = calcMinutes * secondsPerMinute;
-  
-  hours.innerText = `${calcHours} hours`;
-  minutes.innerText = `${calcMinutes} minutes`;
-  seconds.innerText = `${calcSeconds} seconds`;
-});
+
+console.log(typeof positiveInteger);
+console.log(typeof negatveIntegerInteger);
+console.log(typeof largeInteger);
