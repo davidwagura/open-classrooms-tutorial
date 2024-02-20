@@ -8,4 +8,15 @@ let myBook = {
 
 //accesing an object's data
 let  bookTitle = myBook.title;
-let bookPages = myBook.numberOfPages
+let bookPages = myBook.numberOfPages;
+
+//creating a class in JavaScript
+class Book {
+    constructor(title, author, pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+    }
+}
+//creating a new instance
+let newPublished = new Book('The Story of Tau', 'Will Alexander', 250);
