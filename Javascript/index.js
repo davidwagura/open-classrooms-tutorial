@@ -5,3 +5,7 @@ let myBook = {
     numberOfPages: 250,
     isAvailable: true
 };
+
+//accesing an object's data
+let  bookTitle = myBook.title;
+let bookPages = myBook.numberOfPages
