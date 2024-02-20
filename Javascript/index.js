@@ -20,3 +20,11 @@ class Book {
 }
 //creating a new instance
 let newPublished = new Book('The Story of Tau', 'Will Alexander', 250);
+
+
+//using an array to store an ordered list
+let guests = ['Sarah Kate', 'Audrey Simon', 'Will Alexander'];
+
+let firstGuest = guests[0];
+let thirdGuest = guests[2];
+let undefinedGuest = guests[12];
