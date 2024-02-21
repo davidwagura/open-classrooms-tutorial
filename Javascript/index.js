@@ -50,3 +50,8 @@ let allProfiles = [artistProfile];
 artistProfile.available = false;
 
 console.log(allProfiles)
+
+//working with arrays .....counting elements
+
+let guest = ['Will Alexander', 'Sarah Kate', 'Audrey Simon'];
+let howManyGuest = guest.length;
