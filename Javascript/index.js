@@ -55,3 +55,13 @@ console.log(allProfiles)
 
 let guest = ['Will Alexander', 'Sarah Kate', 'Audrey Simon'];
 let howManyGuest = guest.length;
+
+//adding and removing elements
+//(we use push to add)
+
+guest.push('John Doe');
+//to add at the beginning use (unshift)
+guest.unshift('Jonh White');
+
+//removing the last element of an array(pop)
+guest.pop();
