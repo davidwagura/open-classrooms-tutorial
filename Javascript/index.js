@@ -28,3 +28,25 @@ let guests = ['Sarah Kate', 'Audrey Simon', 'Will Alexander'];
 let firstGuest = guests[0];
 let thirdGuest = guests[2];
 let undefinedGuest = guests[12];
+
+//values vs reference
+//numbers,booleans,strings
+
+let numberOfGuests = 20;
+
+let totalNumberOfGuest = numberOfGuests;
+
+
+//array are passed with reference
+
+let artistProfile = {
+    name: 'John Doe',
+    age: 27,
+    available: true
+};
+
+let allProfiles = [artistProfile];
+
+artistProfile.available = false;
+
+console.log(allProfiles)
