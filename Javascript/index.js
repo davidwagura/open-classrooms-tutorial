@@ -74,3 +74,13 @@ if(userLoggedIn)  {
 } else {
     console.log('Intruder alert!');
 }
+//using expressions
+
+const numberOfSeats = 30;
+let numberOfPeople = 25;
+
+if (numberOfPeople < numberOfSeats) {
+
+} else {
+    
+}
