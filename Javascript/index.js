@@ -65,3 +65,12 @@ guest.unshift('Jonh White');
 
 //removing the last element of an array(pop)
 guest.pop();
+
+//if/else statements bollean
+let userLoggedIn = true;
+
+if(userLoggedIn)  {
+    console.log('User logged in!');
+} else {
+    console.log('Intruder alert!');
+}
