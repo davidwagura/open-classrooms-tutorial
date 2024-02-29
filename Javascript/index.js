@@ -67,7 +67,7 @@ guest.unshift('Jonh White');
 guest.pop();
 
 //if/else statements bollean
-let userLoggedIn = true;
+// let userLoggedIn = true;
 
 if(userLoggedIn)  {
     console.log('User logged in!');
@@ -94,3 +94,17 @@ if (numberOfPeople == numberOfSeats) {
 } else {
     //do not allow more guests
 }
+
+//multiple conditions
+let userLoggedIn = true;
+let userHasPremiumAccount = true;
+let userHasMegaPremiumAccount = false;
+
+userLoggedIn && userHasPremiumAccount; //true
+userLoggedIn && userHasMegaPremiumAccount; //false
+
+userLoggedIn || userHasPremiumAccount; //true
+userLoggedIn || userHasMegaPremiumAccount; //true
+
+!userLoggedIn; //false
+!userHasMegaPremiumAccount; //true
