@@ -96,7 +96,7 @@ if (numberOfPeople == numberOfSeats) {
 }
 
 //multiple conditions
-let userLoggedIn = true;
+// let userLoggedIn = true;
 let userHasPremiumAccount = true;
 let userHasMegaPremiumAccount = false;
 
@@ -108,3 +108,15 @@ userLoggedIn || userHasMegaPremiumAccount; //true
 
 !userLoggedIn; //false
 !userHasMegaPremiumAccount; //true
+
+//variable scooping
+let userLoggedIn = true;
+let welcomeMessage = ''; //declare the variable here
+
+if (userLoggedIn) {
+    let welcomeMessage = 'welcome back!';
+} else {
+    let welcomeMessage = 'welcome new user!'
+}
+
+console.log(welcomeMessage); //throws an error
