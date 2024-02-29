@@ -74,13 +74,23 @@ if(userLoggedIn)  {
 } else {
     console.log('Intruder alert!');
 }
-//using expressions
+//using comparative expressions
 
 const numberOfSeats = 30;
 let numberOfPeople = 25;
 
 if (numberOfPeople < numberOfSeats) {
-
+    //aallow more guest
 } else {
-    
+    //do not allow more guest   
+}
+
+//reacting to multiple potential conditions
+
+if (numberOfPeople == numberOfSeats) {
+    //all seats are taken
+} else if (numberOfPeople < numberOfSeats) {
+    //allow more guests
+} else {
+    //do not allow more guests
 }
