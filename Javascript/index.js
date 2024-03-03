@@ -97,8 +97,8 @@ if (numberOfPeople == numberOfSeats) {
 
 //multiple conditions
 // let userLoggedIn = true;
-let userHasPremiumAccount = true;
-let userHasMegaPremiumAccount = false;
+// let userHasPremiumAccount = true;
+// let userHasMegaPremiumAccount = false;
 
 userLoggedIn && userHasPremiumAccount; //true
 userLoggedIn && userHasMegaPremiumAccount; //false
@@ -162,7 +162,7 @@ if (myBoolean) {
     // react to myBoolean being false
 }
 
-let userLoggedIn = true;
+// let userLoggedIn = true;
 
 if (userLoggedIn) {
     console.log('User logged in!');
@@ -187,3 +187,18 @@ if (numberOfGuests == numberOfSeats) {
 } else {
     // do not allow any more guests
 }
+
+
+//multiple conditions
+let userLoggedIn = true;
+let userHasPremiumAccount = true;
+let userHasMegaPremiumAccount = false;
+
+userLoggedIn && userHasPremiumAccount; // true
+userLoggedIn && userHasMegaPremiumAccount; // false
+
+userLoggedIn || userHasPremiumAccount; // true
+userLoggedIn || userHasMegaPremiumAccount; // true
+
+!userLoggedIn; // false
+!userHasMegaPremiumAccount; // true
