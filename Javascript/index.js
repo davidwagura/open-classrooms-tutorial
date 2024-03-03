@@ -32,7 +32,7 @@ let undefinedGuest = guests[12];
 //values vs reference
 //numbers,booleans,strings
 
-let numberOfGuests = 20;
+// let numberOfGuests = 20;
 
 let totalNumberOfGuest = numberOfGuests;
 
@@ -76,7 +76,7 @@ if(userLoggedIn)  {
 }
 //using comparative expressions
 
-const numberOfSeats = 30;
+// const numberOfSeats = 30;
 let numberOfPeople = 25;
 
 if (numberOfPeople < numberOfSeats) {
@@ -168,4 +168,14 @@ if (userLoggedIn) {
     console.log('User logged in!');
 } else {
     console.log('Intruder alert!');
+}
+
+//using expressions
+const numberOfSeats = 30;
+let numberOfGuests = 25;
+
+if (numberOfGuests < numberOfSeats) {
+    // allow more guests
+} else {
+    // do not allow any more guests
 }
