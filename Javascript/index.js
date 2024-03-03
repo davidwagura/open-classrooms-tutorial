@@ -120,3 +120,22 @@ if (userLoggedIn) {
 }
 
 console.log(welcomeMessage); //throws an error
+
+//switch statements
+let firstUser = {
+    name: 'Will Alexander',
+    age: 33,
+    accountLevel: 'normal'
+};
+
+let secondUser = {
+    name: 'Sarah Kate',
+    age: 21,
+    accountLevel: 'premium'
+};
+
+let thirdUser = {
+    name: 'Audrey Simon',
+    age: 27,
+    accountLevel: 'mega-premium'
+};
