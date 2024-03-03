@@ -179,3 +179,11 @@ if (numberOfGuests < numberOfSeats) {
 } else {
     // do not allow any more guests
 }
+//chain  if /else  statements to react to multiple potential conditions
+if (numberOfGuests == numberOfSeats) {
+    // all seats are taken
+} else if (numberOfGuests < numberOfSeats) {
+    // allow more guests
+} else {
+    // do not allow any more guests
+}
