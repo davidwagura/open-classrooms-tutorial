@@ -202,3 +202,15 @@ userLoggedIn || userHasMegaPremiumAccount; // true
 
 !userLoggedIn; // false
 !userHasMegaPremiumAccount; // true
+
+
+//variable scooping////block scooping
+let userLoggedIn = true;
+
+if (userLoggedIn) {
+    let welcomeMessage = 'Welcome back!';
+} else {
+    let welcomeMessage = 'Welcome new user!';
+}
+
+console.log(welcomeMessage); // throws an error
