@@ -110,7 +110,7 @@ userLoggedIn || userHasMegaPremiumAccount; //true
 !userHasMegaPremiumAccount; //true
 
 //variable scooping
-let userLoggedIn = true;
+let userLo0ggedIn = true;
 let welcomeMessage = ''; //declare the variable here
 
 if (userLoggedIn) {
@@ -152,4 +152,20 @@ switch (firstUser.accountLevel) {
         break;
     default:
         console.log('Unknown account type!');
+}
+
+//if/else statement to control your program flow
+
+if (myBoolean) {
+    // react to myBoolean being true
+} else {
+    // react to myBoolean being false
+}
+
+let userLoggedIn = true;
+
+if (userLoggedIn) {
+    console.log('User logged in!');
+} else {
+    console.log('Intruder alert!');
 }
