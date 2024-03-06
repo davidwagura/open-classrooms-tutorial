@@ -205,12 +205,28 @@ userLoggedIn || userHasMegaPremiumAccount; // true
 
 
 //variable scooping////block scooping
-let userLoggedIn = true;
+let userLoggedIn1 = true;
 
-if (userLoggedIn) {
+if (userLoggedIn1) {
     let welcomeMessage = 'Welcome back!';
 } else {
     let welcomeMessage = 'Welcome new user!';
 }
 
 console.log(welcomeMessage); // throws an error
+
+//while loop
+let seatsLeft = 10;
+let passagersStillToBoard = 8;
+
+let passagersBoarded = 0;
+
+while (seatsLeft > 0 && passagersStillToBoard > 0) {
+
+    passagersBoarded++;//one passager boards
+    passagersStillToBoard--; //so there is one fewer still to board
+    seatsLeft--; //and one fewer seat
+
+}
+
+console.log(passagersBoarded); //prints 8, as there are 8 
