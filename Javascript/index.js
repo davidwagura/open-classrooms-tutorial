@@ -230,3 +230,25 @@ while (seatsLeft > 0 && passagersStillToBoard > 0) {
 }
 
 console.log(passagersBoarded); //prints 8, as there are 8 
+
+//manage errors------syntax and logic errors
+
+// logic --arise when you have a mistake in your program logic
+// syntax --when you have miswritten something in your code
+// runtime --when something unexpected happens in your app eg network connections,physical devices,human input/error etc
+
+//Ways of handling potential errors ---use of if/else
+
+if (dataExist && dataIsValid) {
+    //use data here
+} else {
+    //handle error here
+}
+
+//use of ---try / catch
+
+try {
+    //error-prone code here
+} catch {
+    //react to error here
+}
