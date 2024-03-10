@@ -265,3 +265,19 @@ const add = (firstNumber , secondNumber) => {
 }
 
 console.log(add(4,3));
+
+//Array  object functions
+
+
+///empowering classes with instance methods
+
+class BankAccount {
+    constructor(owner, balance) {
+        this.owner = owner;
+        this.balance = balance;
+    }
+}
+
+//create an instance of this class called newAccount
+
+const newAccount = new BankAccount('Will Alexander', 500); 
