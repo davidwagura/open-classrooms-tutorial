@@ -281,3 +281,19 @@ class BankAccount {
 //create an instance of this class called newAccount
 
 const newAccount = new BankAccount('Will Alexander', 500); 
+
+//newAccountBallance
+
+class BamkAccount {
+    constructor(owner, balance) {
+        this.owner = owner;
+        this.balance = balance;
+    }
+    showBalance() {
+        console.log('Balance: ' + this.balance + 'EUR');
+    }
+}
+
+const newAccount = new BankAccount('Will Alexander', 500);
+
+newAccount.showBalance();
