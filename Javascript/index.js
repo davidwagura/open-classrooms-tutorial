@@ -390,7 +390,7 @@ sendWelcomeMessageToUser(secondUser);
 sendWelcomeMessageToUser(thirdUser);
 
 //adding a description name to a function
-const printStringStats = (stringToTest) => {
+const printStringStats1 = (stringToTest) => {
     const wordArray = stringToTest.split('');
     const wordCount = wordArray.length;
     let letterCount = 0;
@@ -438,4 +438,28 @@ const getWordCount = (stringToTest) => {
       letterCount: getLetterCount(stringToTest),
       averageWordLength: getAverageWordLength(stringToTest)
     })
+  }
+
+  //CODE FORMARTING
+
+  //indenting
+  if (userOnline) {
+    for (let message of user.message) {
+        message.send();
+    }
+    sendNotification();
+  }
+
+  //spacing 
+  if(condition) {
+    let i=0;
+    i+condition.thing;
+    let j=i-3;
+  }
+
+
+  if(condition) {
+    let i = 0;
+    i += condition.thing;
+    let j = i - 3;
   }
