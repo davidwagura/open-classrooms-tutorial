@@ -348,44 +348,90 @@ BePolite.sayHello('Will'); //prints 'Hello Will!'
 
 const sum = BePolite.add(2, 3); //sum = 5
 
-//writing clean functions
-
-if (firstUser.online) {
-    if (firstUser.accountType === 'normal') {
-      console.log('Hello ' + firstUser.name + '!');
+//feractoring a code
+if(firstUser.online) {
+    if(firstUser.accountType === 'normal') {
+        console.log('Hello' + firstUser.name + '!');
     } else {
-    console.log('Welcome back premium user ' + firstUser.name + '!');
+        console.log('Welcome back premium user' + firstUser.name + '!');
     }
 }
 
-if (secondUser.online) {
-    if (secondUser.accountType === 'normal') {
-      console.log('Hello ' + secondUser.name + '!');
+if(secondUser.online) {
+    if(secondUser.accountType === 'normal') {
+        console.log('Hello' + secondUser.name + '!');
     } else {
-    console.log('Welcome back premium user ' + secondUser.name + '!');
+        console.log('Welcome back premium user' + secondUser.name + '!');
     }
 }
 
-if (thirdUser.online) {
-    if (thirdUser.accountType === 'normal') {
-      console.log('Hello ' + thirdUser.name + '!');
+if(thirdUser.online) {
+    if(thirdUser.accountType === 'normal') {
+        console.log('Hello' + thirdUser.name + '!');
     } else {
-    console.log('Welcome back premium user ' + thirdUser.name + '!');
+        console.log('Welcome back premium user' + thirdUser.name + '!');
     }
 }
 
+//refactoring the above code into a function
 
-///refactor code into functions
 const sendWelcomeMessageToUser = (user) => {
-    if (user.online) {
+    if(user.online) {
         if (user.accountType === 'normal') {
-          console.log('Hello ' + user.name + '!');
+            console.log('Hello' + user.name + '!');
         } else {
-        console.log('Welcome back premium user ' + user.name + '!');
+            console.log('Welcome back premium user' + user.name + '!');
         }
     }
 }
 
-sendWelcomeMessageToUser(firstUser);
+sendWelcomeMessageToUser(firstGuest);
 sendWelcomeMessageToUser(secondUser);
 sendWelcomeMessageToUser(thirdUser);
+
+//adding a description name to a function
+const printStringStats = (stringToTest) => {
+    const wordArray = stringToTest.split('');
+    const wordCount = wordArray.length;
+    let letterCount = 0;
+    for(let word of wordArray) {
+        word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+        letterCount += word.length;
+    }
+    const averageWordLength = parseFloat((letterCount / wordCount).toFixed(2));
+    const stringStats = {
+        wordCount: wordCount,
+        letterCount: letterCount,
+        avverageWordLength: averageWordLength
+    };
+    console.log(stringStats);
+}
+
+//the refactoring
+
+const getWordCount = (stringToTest) => {
+    const wordArray = stringToTest.split(' ');
+    return wordArray.length;
+  }
+  
+  const getLetterCount = (stringToTest) => {
+    const wordArray = stringToTest.split(' ');
+    let totalLetters = 0;
+    for (let word of wordArray) {
+      word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+      totalLetters += word.length;
+    }
+    return totalLetters;
+  }
+  
+  const getAverageWordLength = (stringToTest) => {
+    return parseFloat((getLetterCount(stringToTest) / getWordCount(stringToTest)).toFixed(2));
+  }
+  
+  const printStringStats = (stringToTest) => {
+    console.log({
+      wordCount: getWordCount(stringToTest),
+      letterCount: getLetterCount(stringToTest),
+      averageWordLength: getAverageWordLength(stringToTest)
+    })
+  }
