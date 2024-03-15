@@ -463,3 +463,22 @@ const getWordCount = (stringToTest) => {
     i += condition.thing;
     let j = i - 3;
   }
+
+  //crully brace placement
+
+  if (condition) {
+    doTheThing();
+  } else {
+    doTheThing();
+  }
+
+  //or
+
+  if (condition) 
+  {
+    doTheThing();
+  }
+  else
+  {
+    doTheThing();
+  }
